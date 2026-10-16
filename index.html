@@ -15,6 +15,12 @@
 <meta property="og:url" content="https://synberry.synitart.com/">
 <meta property="og:title" content="SynBerry™ · AI SmartFarm Factory — 시흥 딸기 농장 준비 중">
 <meta property="og:description" content="수도권 1시간 거리 시흥의 AI 스마트팜 딸기 농장 SynBerry. 수확한 날 안에 식탁까지 — 개장 준비 중, 수요 조사 진행 중.">
+<meta property="og:image" content="https://synberry.synitart.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SynBerry · AI SmartFarm Factory">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta name="author" content="Syn Dae Sik (신대식, 申大湜)">
 <meta name="theme-color" content="#0B1220">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -83,6 +89,29 @@ nav a:hover{color:var(--accent)}
 @media(min-width:720px){.motionbtn{right:32px}}
 @media(prefers-reduced-motion:reduce){.lane i{animation:none}.motionbtn{display:none}}
 
+/* 1. 첫 화면 2단: 글 | 대표 장치 */
+.hero .grid{display:grid;gap:32px;align-items:center}
+.hcopy{display:grid;gap:16px;align-content:start}
+.hpanel{display:grid;gap:12px;padding:24px;border-radius:20px;background:rgb(21 32 51 / .82);border:1px solid var(--border);box-shadow:0 24px 60px rgb(0 0 0 / .35)}
+.hpanel .ph{font-size:22px;line-height:1.35}
+.hpanel .note{margin-top:4px}
+.hpanel .steps{grid-template-columns:1fr;gap:8px}
+.hpanel .steps li{grid-template-columns:44px 1fr;align-items:baseline;gap:2px 12px;padding:12px 16px;border-top:0;border-left:4px solid var(--accent);border-radius:12px}
+.hpanel .steps .sn{grid-row:span 2}
+.hpanel .steps b{font-size:20px}
+.hpanel .twocol{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.hpanel .twocol .col{padding:16px}
+.hpanel .twocol h3{font-size:20px}
+.hpanel .twocol ul{gap:8px;margin-top:8px}
+.hpanel .twocol li{gap:0 8px}
+.hpanel .twocol .law{font-size:15px}
+.hpanel .spec th,.hpanel .spec td{padding:10px 12px}
+@media(min-width:960px){.hero .grid{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:48px}.hero{padding-block:48px 112px}}
+/* 3. 허브로 돌아가는 출구 표지판 */
+.exit{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:4px 12px;border-radius:8px;background:#0F5C3A;border:2px solid #F5F7FA;color:#F5F7FA;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 0 0 2px #0B1220}
+.exit .n{background:#F5F7FA;color:#0F5C3A;border-radius:4px;padding:0 6px;font-size:14px;font-variant-numeric:tabular-nums}
+.exit:hover{transform:translateX(-2px)}
+@media(prefers-reduced-motion:reduce){.exit:hover{transform:none}}
 .sec{padding-block:48px}
 .sec+.sec{border-top:1px solid var(--border)}
 .sec-head{display:grid;gap:8px;margin-bottom:24px}
@@ -138,7 +167,8 @@ footer a{color:var(--text);text-decoration:underline;text-underline-offset:4px;d
 
 @media print{
   :root{--bg:#FFFFFF;--surface:#F8FAFC;--text:#0F172A;--muted:#475569;--border:#94A3B8;--hold:#475569;--accent:#166534;--on-accent:#FFFFFF;--wa:#0F172A;--wb:#0F172A}
-  .lane,.motionbtn,.glow,.skip{display:none!important}
+  .lane,.motionbtn,.glow,.skip,.exit{display:none!important}
+  .hpanel{box-shadow:none;background:var(--surface)}
   .hero{padding-block:16px}
   .sec,.works li,.steps li,.twocol .col{break-inside:avoid}
   a{color:var(--text)}
@@ -155,27 +185,27 @@ footer a{color:var(--text);text-decoration:underline;text-underline-offset:4px;d
       <a href="#people">답하는 사람</a>
       <a href="#contact">문의</a>
     </nav>
+    <a class="exit" href="https://synitart.com/#exits" aria-label="SynItArt 출구 안내로 돌아가기, EXIT 02"><span class="n">EXIT 02</span><span>출구 안내</span></a>
   </div>
 </header>
 <main id="main">
 <section class="hero" id="top" aria-labelledby="heroH">
   <div class="glow" aria-hidden="true"></div>
-  <div class="wrap">
-    <p class="eyebrow">AI SmartFarm Factory · 경기 시흥</p>
-    <h1 id="heroH">수확한 그날,<br>식탁까지 가는 딸기</h1>
-    <p class="lead">수도권 1시간 거리 시흥에서 AI 스마트팜으로 딸기를 기르고, 수확한 날 안에 전해 드리려고 준비하고 있습니다. 배송 권역·가격·체험 프로그램은 수요 조사로 정합니다.</p>
-    <div class="cta"><a class="btn btn-fill" href="https://synitart.com/synberry/?src=synberry-sub">수요 조사 설문 (1분) →</a><a class="more" href="#detail">준비 중인 흐름 보기</a></div>
+  <div class="wrap grid">
+    <div class="hcopy">
+      <p class="eyebrow">AI SmartFarm Factory · 경기 시흥</p>
+      <h1 id="heroH">수확한 그날,<br>식탁까지 가는 딸기</h1>
+      <p class="lead">수도권 1시간 거리 시흥에서 AI 스마트팜으로 딸기를 기르고, 수확한 날 안에 전해 드리려고 준비하고 있습니다. 배송 권역·가격·체험 프로그램은 수요 조사로 정합니다.</p>
+      <div class="cta"><a class="btn btn-fill" href="https://synitart.com/synberry/?src=synberry-sub">수요 조사 설문 (1분) →</a><a class="more" href="#works">하는 일 보기</a></div>
+    </div>
+    <aside class="hpanel" id="detail" aria-labelledby="detailH">
+      <h2 class="ph" id="detailH">수확에서 식탁까지, 그날 안에</h2>
+      <ol class="steps"><li><span class="sn">01</span><b>수확</b><span>AI 스마트팜 하우스에서 그날 딴 딸기</span></li><li><span class="sn">02</span><b>선별·포장</b><span>크기·익음 정도를 골라 상하지 않게 포장</span></li><li><span class="sn">03</span><b>당일 배송</b><span>수도권 1시간 권역 가정·단체로</span></li><li><span class="sn">04</span><b>식탁</b><span>수확한 날 안에 도착하는 것이 목표</span></li></ol>
+      <p class="note">개장 전 준비 중인 흐름입니다. 시간과 권역은 수요 조사 결과로 정합니다.</p>
+    </aside>
   </div>
   <div class="lane" aria-hidden="true"><i></i></div>
   <button class="motionbtn" id="motionBtn" type="button" aria-pressed="false">배경 움직임 끄기</button>
-</section>
-
-<section class="sec" id="detail" aria-labelledby="detailH">
-  <div class="wrap">
-    <div class="sec-head"><h2 id="detailH">수확에서 식탁까지, 그날 안에</h2></div>
-    <ol class="steps"><li><span class="sn">01</span><b>수확</b><span>AI 스마트팜 하우스에서 그날 딴 딸기</span></li><li><span class="sn">02</span><b>선별·포장</b><span>크기·익음 정도를 골라 상하지 않게 포장</span></li><li><span class="sn">03</span><b>당일 배송</b><span>수도권 1시간 권역 가정·단체로</span></li><li><span class="sn">04</span><b>식탁</b><span>수확한 날 안에 도착하는 것이 목표</span></li></ol>
-    <p class="note">개장 전 준비 중인 흐름입니다. 시간과 권역은 수요 조사 결과로 정합니다.</p>
-  </div>
 </section>
 
 <section class="sec" id="works" aria-labelledby="worksH">
