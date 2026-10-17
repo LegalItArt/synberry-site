@@ -5,7 +5,7 @@
   var SURVEY = "https://synitart.com/synberry/";
   /* 소식 받기 접수 주소. 별도 시트용 Apps Script를 배포한 뒤 그 웹 앱 주소(…/exec)를 넣으면 양식이 열립니다.
      비어 있으면 양식은 안내만 보여 주고 아무것도 보내지 않습니다. */
-  var LEAD_ENDPOINT = "";
+  var LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbyxtboJwzarJkvW62mAd8DwrzfmBAh0OnlQJXvPh36ckIXO6Yp084SicNYQ0AIgzqCsXQ/exec";
 
   function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch(e){ return null; } }
   function sstore(k, v){ try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch(e){ return null; } }
