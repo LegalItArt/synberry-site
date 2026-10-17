@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=7">
+<link rel="stylesheet" href="assets/site.css?v=8">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SynBerry", "url": "https://synberry.synitart.com/", "inLanguage": "ko", "publisher": {"@type": "Organization", "name": "SynItArt", "url": "https://synitart.com"}}]</script>
 </head>
 <body data-page="home" class="has-mbar">
@@ -40,42 +40,33 @@
     <nav class="menu" aria-label="주요 메뉴"><a href="index.html" aria-current="page">처음</a><a href="brief.html">정책 브리핑</a><a href="tools.html">창업 점검 도구</a><a href="index.html#visit">체험·교육</a><a href="index.html#supply">당일 배송</a><a href="index.html#subscribe">소식 받기</a></nav>
   </header>
   <main id="main">
-    <section class="press" aria-labelledby="h-press">
-      <div class="presshead">
-        <span class="eyebrow">2024~2026 농업 기사가 말하는 것</span>
-        <button class="tbtn" type="button" id="tossAgain">기사 다시 던지기</button>
-      </div>
-      <h2 id="h-press" class="sr">스마트농업 관련 주요 기사 6건</h2>
-      <ul class="clips" id="clips">
-        <li style="--r:-3deg;--d:0s"><a href="brief.html#n-2501"><span class="meta">2025.01 · 더팩트</span><b class="big">35%</b><span class="hl">2029년까지 전국 온실 셋 중 하나를 스마트팜으로</span></a></li>
-        <li style="--r:2.5deg;--d:.09s"><a href="brief.html#n-2603b"><span class="meta">2026.03 · 뉴데일리</span><b class="big">AI 대전환</b><span class="hl">농식품부·과기정통부, 농업 AI 전략 13개 과제 발표</span></a></li>
-        <li style="--r:-1.5deg;--d:.18s"><a href="brief.html#n-2605"><span class="meta">2026.05 · 경북매일</span><b class="big">50.8%</b><span class="hl">농가 경영주 절반이 70세 이상, AI 실제 활용은 10% 미만</span></a></li>
-        <li style="--r:3deg;--d:.27s"><a href="brief.html#n-2411"><span class="meta">2024.11 · SBS Biz</span><b class="big">+32%</b><span class="hl">폭염에 모종 늦어져 딸기 경매가 1년 새 급등</span></a></li>
-        <li style="--r:-2.5deg;--d:.36s"><a href="brief.html#n-2602b"><span class="meta">2026.02 · 트위그뉴스</span><b class="big">145억</b><span class="hl">논산에 청년농 딸기 수출 전문 스마트팜 단지</span></a></li>
-        <li style="--r:1.5deg;--d:.45s"><a href="brief.html#n-2610"><span class="meta">2026.10 · 경북매일</span><b class="big">1년</b><span class="hl">임대형 스마트팜 청년농, 입주 1년 만에 첫 수출</span></a></li>
-      </ul>
-      <p class="muted small">기사 내용을 짧게 다시 쓴 요약입니다. 카드를 누르면 근거와 원문 링크가 있는 정책 브리핑으로 이동합니다.</p>
-    </section>
-
-    <section class="hero" aria-labelledby="h-hero">
-      <div>
-        <span class="eyebrow">그래서, 경기 시흥에서</span>
-        <h1 id="h-hero">농업은 이미 스마트팜으로 갑니다.<br>그 딸기를 가장 먼저 맛보세요.</h1>
-        <p class="lead">SynBerry는 시흥에서 준비 중인 AI 스마트팜 딸기 농장입니다. 첫 수확에 앞서 집에서 딸기를 맛보고 의견을 주실 <b>무료 시식 체험단 30가구</b>를 모읍니다.</p>
-        <div class="ctas">
-          <a class="cta" data-survey="home-hero" href="https://synitart.com/synberry/">무료 시식 체험단 신청 (1분) →</a>
-          <a class="cta ghost" href="brief.html">기사 11건 정책 브리핑</a>
+    <section class="hero3d" id="top" aria-labelledby="h-hero">
+      <canvas class="scene" id="scene" aria-hidden="true"></canvas>
+      <div class="plate" aria-hidden="true"></div>
+      <div class="hin">
+        <div class="hcopy">
+          <span class="heye">AI SmartFarm Factory · 경기 시흥</span>
+          <h1 id="h-hero">농업은 이미 스마트팜으로 갑니다.<br>그 딸기를 가장 먼저 맛보세요.</h1>
+          <p class="hlead">시흥에서 준비 중인 AI 스마트팜 딸기 농장 SynBerry가 첫 수확에 앞서 <b>무료 시식 체험단 30가구</b>를 모읍니다. 구매·결제가 아닌 수요 조사입니다.</p>
+          <div class="ctas">
+            <a class="cta" data-survey="home-hero" href="https://synitart.com/synberry/">무료 시식 체험단 신청 (1분) →</a>
+            <a class="cta hghost" href="brief.html">기사 11건 정책 브리핑</a>
+          </div>
         </div>
-        <p class="muted small">구매·결제가 아닌 수요 조사입니다. 선정되면 문자로 연락드립니다.</p>
-      </div>
-      <div class="spec" aria-label="SynBerry 1단계 설계 기준표">
-        <div class="cap">1단계 설계 기준표 · 운영 전 계획치</div>
-        <div class="row"><span>작목·작형</span><span>딸기 · 촉성 고설 수경</span></div>
-        <div class="row"><span>재배 면적</span><span>304㎡</span></div>
-        <div class="row"><span>심는 밀도</span><span>7.6주/㎡ · 약 2,300주</span></div>
-        <div class="row"><span>생육 적온</span><span>18~23℃</span></div>
-        <div class="row"><span>배송 목표</span><span>수확 당일 수도권</span></div>
-        <div class="row"><span>첫 시즌</span><span>2027년 (목표)</span></div>
+        <div class="presshead">
+          <span class="heye">2024~2026 농업 기사가 말하는 것</span>
+          <span class="hbtns"><button class="hbtn" type="button" id="tossAgain">기사 다시 던지기</button><button class="hbtn" id="motionBtn" type="button" aria-pressed="false">배경 움직임 끄기</button></span>
+        </div>
+        <h2 class="sr">스마트농업 관련 주요 기사 6건</h2>
+        <ul class="clips" id="clips">
+          <li style="--r:-3deg;--d:0s"><a href="brief.html#n-2501"><span class="meta">2025.01 · 더팩트</span><b class="big">35%</b><span class="hl">2029년까지 전국 온실 셋 중 하나를 스마트팜으로</span></a></li>
+          <li style="--r:2.5deg;--d:.09s"><a href="brief.html#n-2603b"><span class="meta">2026.03 · 뉴데일리</span><b class="big">AI 대전환</b><span class="hl">농식품부·과기정통부, 농업 AI 전략 13개 과제 발표</span></a></li>
+          <li style="--r:-1.5deg;--d:.18s"><a href="brief.html#n-2605"><span class="meta">2026.05 · 경북매일</span><b class="big">50.8%</b><span class="hl">농가 경영주 절반이 70세 이상, AI 실제 활용은 10% 미만</span></a></li>
+          <li style="--r:3deg;--d:.27s"><a href="brief.html#n-2411"><span class="meta">2024.11 · SBS Biz</span><b class="big">+32%</b><span class="hl">폭염에 모종 늦어져 딸기 경매가 1년 새 급등</span></a></li>
+          <li style="--r:-2.5deg;--d:.36s"><a href="brief.html#n-2602b"><span class="meta">2026.02 · 트위그뉴스</span><b class="big">145억</b><span class="hl">논산에 청년농 딸기 수출 전문 스마트팜 단지</span></a></li>
+          <li style="--r:1.5deg;--d:.45s"><a href="brief.html#n-2610"><span class="meta">2026.10 · 경북매일</span><b class="big">1년</b><span class="hl">임대형 스마트팜 청년농, 입주 1년 만에 첫 수출</span></a></li>
+      </ul>
+        <p class="hnote">카드는 기사를 짧게 다시 쓴 요약입니다. 누르면 근거와 원문 링크가 있는 정책 브리핑으로 갑니다.</p>
       </div>
     </section>
 
@@ -180,6 +171,18 @@
       <div class="shead">
         <span class="eyebrow">농장 준비 · 진행 상황을 그대로 공개합니다</span>
         <h2 id="h-farm">농장이 생기는 순서</h2>
+      </div>
+      <div class="farmtop">
+        <div class="spec" aria-label="SynBerry 1단계 설계 기준표">
+        <div class="cap">1단계 설계 기준표 · 운영 전 계획치</div>
+        <div class="row"><span>작목·작형</span><span>딸기 · 촉성 고설 수경</span></div>
+        <div class="row"><span>재배 면적</span><span>304㎡</span></div>
+        <div class="row"><span>심는 밀도</span><span>7.6주/㎡ · 약 2,300주</span></div>
+        <div class="row"><span>생육 적온</span><span>18~23℃</span></div>
+        <div class="row"><span>배송 목표</span><span>수확 당일 수도권</span></div>
+        <div class="row"><span>첫 시즌</span><span>2027년 (목표)</span></div>
+      </div>
+        <p class="muted">시흥 매화동 부지에 2연동 비닐 온실 304㎡로 시작합니다. 아래 순서대로 준비 상황을 공개합니다.</p>
       </div>
       <ol class="road">
         <li class="now"><span class="when">2026년 10월 <span class="chip now">진행 중</span></span><h3>수요 조사 · 시흥시청 사전 상담 준비</h3><p>부지에 비닐하우스와 육묘 시설을 둘 수 있는지 관할 기관에 먼저 확인합니다. 땅을 먼저 잡고 허가를 나중에 보는 순서는 피합니다.</p></li>
@@ -313,6 +316,8 @@
       <p class="muted small" style="margin-top:8px">기사와 책의 문장을 옮기지 않고 수치와 사실만 다시 정리했습니다. 전체 기사 목록은 <a href="brief.html">정책 브리핑</a>에 있습니다.</p>
     </details>
   </main>
+<script src="assets/scene2d.js?v=8"></script>
+<script>(function(){var c=navigator.connection;if(c&&(c.saveData||/2g/.test(c.effectiveType||"")))return;function go(){var s=document.createElement("script");s.src="scene3d.js?v=c151b0e90e";s.async=true;document.body.appendChild(s)}if(document.readyState==="complete")setTimeout(go,200);else addEventListener("load",function(){setTimeout(go,200)})})();</script>
 <div class="mbar"><a class="cta" data-survey="mbar-home" href="https://synitart.com/synberry/">무료 시식 체험단 신청 (1분)</a></div>
   <footer>
     <div class="row">
@@ -322,6 +327,6 @@
     <div class="row"><span>SYNBERRY 상표 출원 중 (40-2026-0216894) · <a href="privacy.html">개인정보 처리방침</a></span><span>AI·데이터 실무교육 3,603시간</span></div>
   </footer>
 </div>
-<script src="assets/site.js?v=7"></script>
+<script src="assets/site.js?v=8"></script>
 </body>
 </html>
