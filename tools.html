@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>스마트팜 창업 점검 도구</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="스마트팜 짓기 전 12가지 준비도 점검과 딸기 수경재배 소득 계산기. 농촌진흥청 2024년산 평균값 기준, 가입 없이 무료.">
+<link rel="canonical" href="https://synberry.synitart.com/tools.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SynBerry">
+<meta property="og:title" content="스마트팜 창업 점검 도구">
+<meta property="og:description" content="스마트팜 짓기 전 12가지 준비도 점검과 딸기 수경재배 소득 계산기. 농촌진흥청 2024년산 평균값 기준, 가입 없이 무료.">
+<meta property="og:url" content="https://synberry.synitart.com/tools.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://synberry.synitart.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "SynBerry", "url": "https://synberry.synitart.com/", "inLanguage": "ko", "publisher": {"@type": "Organization", "name": "SynItArt", "url": "https://synitart.com"}}]</script>
+</head>
+<body data-page="tools" class="has-mbar">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<div class="wrap">
+  <header class="top">
+    <div class="toprow">
+      <a class="logo" href="index.html" aria-label="SynItArt SynBerry 처음으로"><span class="hold">SynItArt ·</span> <span class="syn">Syn</span><b>Berry</b><sup class="tm">™</sup></a>
+      <div class="tools">
+        <span class="status">개장 준비 중</span>
+        <button class="tbtn" type="button" id="fsDown" aria-label="글자 작게">가−</button>
+        <button class="tbtn" type="button" id="fsUp" aria-label="글자 크게">가+</button>
+        <button class="tbtn" type="button" id="themeBtn">어둡게</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="주요 메뉴"><a href="index.html">처음</a><a href="brief.html">정책 브리핑</a><a href="tools.html" aria-current="page">창업 점검 도구</a><a href="index.html#visit">체험·교육</a><a href="index.html#supply">당일 배송</a><a href="index.html#subscribe">소식 받기</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="h-tools" style="grid-template-columns:1fr">
+      <div>
+        <span class="eyebrow">무료 도구 · 가입 없이 바로 씁니다</span>
+        <h1 id="h-tools">스마트팜, 짓기 전에<br>숫자부터 맞춰 보세요</h1>
+        <p class="lead">스마트팜 실패의 상당수는 공사가 끝나기 전에 이미 정해집니다. 허가, 전기, 물, 견적, 첫해 수확량을 미리 점검하는 도구 두 가지를 공개합니다. 입력한 내용은 이 브라우저 밖으로 나가지 않습니다.</p>
+        <div class="ctas"><a class="cta" href="#check">준비도 점검 (12문항)</a><a class="cta ghost" href="#calc">딸기 소득 계산기</a></div>
+      </div>
+    </section>
+
+    <section id="check" aria-labelledby="h-check">
+      <div class="shead"><span class="eyebrow">도구 1 · 2분이면 끝납니다</span><h2 id="h-check">스마트팜 창업 준비도 점검</h2>
+        <p class="muted">해당하는 항목에 표시하세요. 표시하지 않은 항목 중 먼저 할 일 세 가지를 바로 알려 드립니다.</p></div>
+      <div class="panel" id="checkTool">
+        <ul class="checklist">
+          <li><span class="groupname">땅·허가</span><label class="check"><input type="checkbox" id="c1" data-todo="토지이용계획확인서를 떼어 부지에 겹친 지역·구역(개발제한구역, 농업진흥지역 등)부터 확인하세요."><span>부지의 용도지역과 규제 구역을 토지이용계획확인서로 확인했다<span class="why">같은 농지라도 구역에 따라 지을 수 있는 시설과 면적이 크게 달라집니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c2" data-todo="땅을 계약하기 전에 시·군청 담당 부서에 시설 설치 가능 여부를 사전 상담하세요. 허가가 안 나면 계약을 끝낼 수 있는 조건도 넣으세요."><span>시·군청에 온실·육묘 시설을 지을 수 있는지 사전 상담했다<span class="why">땅을 먼저 잡고 허가를 나중에 보면 되돌리기 어렵습니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c3" data-todo="임차 농지라면 시설 설치와 인허가 신청에 소유자 동의가 필요한지, 임대 기간이 시설 내용연수보다 긴지 확인하세요."><span>임차 농지라면 소유자 동의와 임대 기간을 확인했다<span class="why">일부 지원사업은 장기 임대나 소유를 요건으로 둡니다.</span></span></label></li>
+          <li><span class="groupname">전기·물</span><label class="check"><input type="checkbox" id="c4" data-todo="한전에 전기 인입 가능 여부와 선로 용량, 예상 기간을 직접 문의하세요. 시공사에 맡기지 말고 부지 확정 즉시 신청하세요."><span>한전에 전기 인입 가능 여부와 기간을 직접 물었다<span class="why">선로 용량이 모자라면 몇 달씩 늦어져 재배 시기를 놓칩니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c5" data-todo="쓸 물(지하수 또는 수돗물)의 pH·EC·철분 검사를 맡기고, 닷새 치 원수를 담을 탱크 크기를 계산하세요."><span>쓸 물의 pH·EC·철분 검사를 했다<span class="why">물에 철분이나 염류가 많으면 여과 장치가 따로 필요합니다.</span></span></label></li>
+          <li><span class="groupname">시설</span><label class="check"><input type="checkbox" id="c6" data-todo="요구사항을 숫자로 적은 설계요청서를 만들어 시공사 3곳 이상에 같은 내용으로 보내고 견적을 받으세요."><span>같은 설계요청서로 시공사 3곳 이상에서 견적을 받았다<span class="why">평당 가격만 물으면 서로 다른 사양을 비교하게 됩니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c7" data-todo="견적서에 내재해형 규격(견디는 적설심·풍속)과 골조 파이프 두께가 적혀 있는지 확인하세요."><span>견적서에서 내재해형 규격(적설·풍속)을 확인했다<span class="why">온실 붕괴는 대부분 밤사이 눈 무게로 일어납니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c8" data-todo="정전·저온 알림을 휴대전화 여러 대로 받게 하고, 제어기와 PC에 무정전 전원(UPS)을 넣으세요."><span>정전·저온 알림과 무정전 전원을 계획에 넣었다<span class="why">센서 하나가 고장 나 한겨울 실내가 2℃까지 떨어진 사례가 있습니다.</span></span></label></li>
+          <li><span class="groupname">재배</span><label class="check"><input type="checkbox" id="c9" data-todo="첫 작기 모종을 직접 기를지, 경험 많은 육묘 농가에 맡길지 정하고 육묘 시기를 거꾸로 계산하세요."><span>첫 작기 모종을 어디서 구할지 정했다<span class="why">딸기는 모종 시기 온도 관리가 그해 수확을 좌우합니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c10" data-todo="같은 작목을 3년 이상 기른 멘토 농가나 교육 농장을 찾아 첫해를 같이 보내세요."><span>같은 작목을 길러 본 멘토 농가가 있다<span class="why">혁신밸리 임대팜 청년의 딸기 수확량은 지역 농가의 36%였습니다.</span></span></label></li>
+          <li><span class="groupname">판로·돈</span><label class="check"><input type="checkbox" id="c11" data-todo="첫해 수확량을 지역 평균보다 낮게 잡고 대출 이자까지 넣어 손익을 다시 계산하세요. 아래 계산기로 시작할 수 있습니다."><span>첫해 수확량을 낮게 잡고 손익을 계산했다<span class="why">평균값으로 짠 계획은 첫해에 거의 맞지 않습니다.</span></span></label></li>
+          <li><label class="check"><input type="checkbox" id="c12" data-todo="생산 전에 판로(직거래, 공동 출하, 체험, 당일 배송)를 정하고 포장·응대 업무량을 인력 계획에 넣으세요."><span>생산 전에 판로를 정했다<span class="why">딸기는 대부분 국내에서 팔려, 출하가 몰리면 값이 쉽게 내려갑니다.</span></span></label></li>
+        </ul>
+        <div class="result" aria-live="polite">
+          <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><b>준비도</b><span class="mono" id="ckScore">0 / 12</span></div>
+          <div class="meter" aria-hidden="true"><span id="ckBar"></span></div>
+          <p id="ckStage" style="font-weight:700"></p>
+          <div id="ckTodoWrap" style="display:grid;gap:8px"><span class="lbl">지금 먼저 할 일</span><ol class="todo" id="ckTodo"></ol></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calc" aria-labelledby="h-calc">
+      <div class="shead"><span class="eyebrow">도구 2 · 농촌진흥청 2024년산 평균값 기준</span><h2 id="h-calc">딸기 수경재배 소득 계산기</h2>
+        <p class="muted">면적과 숙련도를 넣으면 한 해 수확량, 총수입, 경영비, 소득을 계산합니다. 경영비는 면적에 비례하고, 수확량은 숙련도에 따라 줄어듭니다.</p></div>
+      <div class="panel" id="calcTool">
+        <div class="grid2">
+          <div class="field"><label for="cArea">재배 면적</label>
+            <div style="display:flex;gap:8px"><input id="cArea" type="number" inputmode="decimal" min="0" step="1" value="304"><select id="cUnit" aria-label="면적 단위" style="width:auto"><option value="m2">㎡</option><option value="py">평</option></select></div>
+            <span class="hint" id="oArea"></span></div>
+          <div class="field"><label for="cPrice">kg당 판매가 (원)</label><input id="cPrice" type="number" inputmode="numeric" min="0" step="100" value="10868"><span class="hint">기본값 10,868원은 2024년 수경 딸기 농가 평균 받은 값입니다.</span></div>
+        </div>
+        <div class="field">
+          <span class="lbl" id="lg-skill">숙련도</span>
+          <div class="choices" role="radiogroup" aria-labelledby="lg-skill">
+            <label><input type="radio" name="skill" id="sk1" value="0.36" checked>첫해 (지역 평균의 36%)</label>
+            <label><input type="radio" name="skill" id="sk2" value="0.7">2~3년차 가정 (70%)</label>
+            <label><input type="radio" name="skill" id="sk3" value="1">지역 평균 (100%)</label>
+          </div>
+          <span class="hint">36%는 김제 혁신밸리 임대팜 청년의 딸기 수확량이 지역 농가의 36%였다는 연구보고서 값입니다.</span>
+        </div>
+        <div class="outgrid" aria-live="polite">
+          <div class="out"><span class="k">예상 수확량</span><span class="v" id="oKg"></span></div>
+          <div class="out"><span class="k">총수입</span><span class="v" id="oRev"></span></div>
+          <div class="out"><span class="k">경영비</span><span class="v" id="oCost"></span></div>
+        </div>
+        <div class="out" id="oIncBox" style="border-width:3px"><span class="k" id="oIncLbl">소득</span><span class="v" id="oInc" style="font-size:2rem"></span></div>
+        <p class="muted small">계산식: 수확량 = 3.292kg/㎡ × 면적 × 숙련도, 경영비 = 20,783원/㎡ × 면적 (농촌진흥청 2024년산 수경 딸기 10a 평균). 여기서 소득은 총수입에서 경영비를 뺀 값으로, 본인 노동의 대가와 시설 투자금 상환은 따로 따져야 합니다. 실제 계획은 견적과 현장 수치로 다시 계산하세요.</p>
+      </div>
+    </section>
+
+    <section id="subscribe" aria-labelledby="h-sub">
+      <div class="shead">
+        <span class="eyebrow">소식 받기 · 문자로 한 달에 한두 번</span>
+        <h2 id="h-sub">농장이 열리는 날, 가장 먼저 알려 드립니다</h2>
+        <p class="muted">체험·교육 프로그램이 열리거나 정책 브리핑에 새 글이 올라오면 문자로 알려 드립니다. 시식 체험단 설문과는 별개의 신청입니다.</p>
+      </div>
+      <div class="panel">
+        <p class="notice" id="leadClosed" hidden>소식 받기는 개인정보 처리 절차를 마친 뒤 곧 열립니다. 그 전까지는 <a data-survey="lead-closed-tools" href="https://synitart.com/synberry/">시식 체험단 설문</a>으로 신청해 주세요.</p>
+        <form id="leadForm" novalidate>
+          <fieldset>
+            <div class="field">
+              <span class="lbl" id="lg-int">받고 싶은 소식 <span class="hint">(여러 개 고를 수 있습니다)</span></span>
+              <div class="choices" role="group" aria-labelledby="lg-int">
+                <label><input type="checkbox" name="interest" id="iExp" value="체험·시식 개장">체험·시식 개장</label>
+                <label><input type="checkbox" name="interest" id="iEdu" value="학교·기관 교육">학교·기관 교육</label>
+                <label><input type="checkbox" name="interest" id="iStart" value="스마트팜 창업 점검">스마트팜 창업 점검</label>
+                <label><input type="checkbox" name="interest" id="iBrief" value="정책 브리핑 새 글">정책 브리핑 새 글</label>
+              </div>
+            </div>
+            <div class="grid2">
+              <div class="field"><label for="lName">이름 또는 닉네임</label><input id="lName" type="text" autocomplete="name"></div>
+              <div class="field"><label for="lPhone">휴대폰 번호</label><input id="lPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="010-0000-0000"></div>
+            </div>
+            <div class="field"><label for="lArea">사는 곳 <span class="hint">(선택)</span></label>
+              <select id="lArea"><option value="">선택 안 함</option><option>시흥·안산·광명</option><option>부천·안양·군포·의왕·인천</option><option>서울</option><option>수원·화성·그 밖의 경기</option><option>그 밖의 지역</option></select></div>
+            <div class="consent">
+              <label for="lAgree"><input type="checkbox" id="lAgree"> <b>개인정보 수집·이용에 동의합니다 (필수)</b></label>
+              <dl>
+                <dt>수집 항목</dt><dd>이름 또는 닉네임, 휴대폰 번호, 사는 곳, 받고 싶은 소식</dd>
+                <dt>이용 목적</dt><dd>고르신 소식(프로그램 개설, 정책 브리핑 새 글)을 문자로 알림</dd>
+                <dt>보유 기간</dt><dd>수신 거부 요청 시 바로 삭제, 늦어도 2028년 12월 31일까지</dd>
+                <dt>거부할 권리</dt><dd>동의하지 않으실 수 있으며, 그러면 소식을 보내 드릴 수 없습니다</dd>
+              </dl>
+              <label for="lMkt"><input type="checkbox" id="lMkt"> 할인·이벤트 같은 광고성 정보도 받겠습니다 (선택)</label>
+              <span class="hint">자세한 내용은 <a href="privacy.html">개인정보 처리방침</a>에 있습니다.</span>
+            </div>
+            <p class="error" id="leadErr" role="alert" aria-live="assertive"></p>
+            <div class="ctas"><button class="cta" type="submit" id="leadSubmit">소식 받기</button></div>
+          </fieldset>
+        </form>
+        <div class="done" id="leadDone" hidden role="status"><h3>신청이 접수되었습니다</h3><p>고르신 소식이 생기면 문자로 알려 드립니다. 그만 받고 싶으시면 문자에 안내된 방법이나 메일로 알려 주세요.</p></div>
+      </div>
+    </section>
+
+    <div class="sharebar">
+      <span><b>창업을 준비하는 분께 이 도구를 알려 주세요</b></span>
+      <span class="mono small" id="shareUrl"></span>
+      <button class="copy" type="button" data-copy="shareUrl">링크 복사</button>
+    </div>
+
+    <details class="src">
+      <summary>도구의 근거 보기</summary>
+      <ol>
+        <li><a href="https://www.rda.go.kr/board/board.do?mode=view&amp;prgId=day_farmprmninfoEntry&amp;dataNo=100000805467" target="_blank" rel="noopener">농촌진흥청, 2024년도 농산물소득조사 결과 발표 (2025.9.30)</a></li>
+        <li>미래농업전략연구원·김제시, 『스마트팜 혁신밸리 활성화 방안 수립』 (2023) — 임대팜 딸기 수확량 비교</li>
+        <li>안해성·이종혁, 『대기업 퇴사하고 농사를 짓습니다』 — 전기 인입, 견적 비교, 센서 고장 사례</li>
+        <li>농촌진흥청, 『농업기술길잡이 시설원예(개정판)』 (2023) — 내재해형 규격, 양액·수질 기준</li>
+      </ol>
+    </details>
+  </main>
+<div class="mbar"><a class="cta" data-survey="mbar-tools" href="https://synitart.com/synberry/">무료 시식 체험단 신청 (1분)</a></div>
+  <footer>
+    <div class="row">
+      <span>SynItArt · SynBerry · 경기 시흥 · 개장 준비 중 (사업자 등록 전 단계로 판매·결제를 하지 않습니다)</span>
+      <span>문의 <span id="mail">synitart@gmail.com</span> <button class="copy" type="button" data-copy="mail">복사</button></span>
+    </div>
+    <div class="row"><span>SYNBERRY 상표 출원 중 (40-2026-0216894) · <a href="privacy.html">개인정보 처리방침</a></span><span>AI·데이터 실무교육 3,603시간</span></div>
+  </footer>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
