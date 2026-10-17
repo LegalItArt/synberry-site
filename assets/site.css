@@ -304,3 +304,18 @@ html,body{overflow-x:clip}
 /* 한글은 낱말 단위로 줄바꿈 (긴 주소는 칸 안에서 끊김) */
 body{word-break:keep-all;overflow-wrap:break-word}
 .mono,#shareUrl{overflow-wrap:anywhere}
+
+/* 균형 보정: 장면은 v5와 같은 가로 비율(최대 900px 높이)로 고정, 카드는 장면 아래 어두워지는 곳에 걸친다.
+   띠 폭은 스크롤바를 뺀 실제 화면 폭(--vw, site.js가 계산) */
+.hero3d{width:var(--vw,100vw);margin-inline:calc(50% - var(--vw,100vw) / 2);min-height:0;align-content:start}
+.hero3d canvas.scene{inset:0 0 auto 0;height:min(100svh,900px)}
+.hero3d .plate{inset:0 0 auto 0;height:min(100svh,900px);
+  background:linear-gradient(90deg,rgb(11 18 32 / .9) 0%,rgb(11 18 32 / .8) 34%,rgb(11 18 32 / .3) 54%,rgb(11 18 32 / .08) 72%),linear-gradient(0deg,#0B1220 0%,rgb(11 18 32 / .75) 18%,rgb(11 18 32 / 0) 42%)}
+.hin{padding-block:clamp(88px,16vh,170px) 40px}
+.hcopy{min-height:calc(min(100svh,900px) - clamp(88px,16vh,170px) - 210px);align-content:start}
+@media (max-width:820px){
+  .hero3d canvas.scene,.hero3d .plate{height:min(100svh,760px)}
+  .hero3d .plate{background:linear-gradient(180deg,rgb(11 18 32 / .3) 0,rgb(11 18 32 / .55) 40%,rgb(11 18 32 / .9) 75%,#0B1220 100%)}
+  .hin{padding-block:120px 28px}
+  .hcopy{min-height:0}
+}

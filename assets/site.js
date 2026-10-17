@@ -11,6 +11,10 @@
   function sstore(k, v){ try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch(e){ return null; } }
   function $(id){ return document.getElementById(id); }
 
+  /* 스크롤바를 뺀 실제 화면 폭: 첫 화면 띠가 좌우로 밀리지 않게 */
+  function setVw(){ root.style.setProperty("--vw", root.clientWidth + "px"); }
+  setVw(); addEventListener("resize", setVw);
+
   /* 글자 크기 17~25px */
   var fs = parseInt(store("sb-fs"), 10); if (!(fs >= 17 && fs <= 25)) fs = 19;
   function setFs(v){ fs = Math.max(17, Math.min(25, v)); root.style.setProperty("--fs", fs + "px"); store("sb-fs", String(fs)); }
