@@ -300,3 +300,7 @@ html,body{overflow-x:clip}
   .hin{padding-block:150px 28px}
   .farmtop{grid-template-columns:1fr}
 }
+
+/* 한글은 낱말 단위로 줄바꿈 (긴 주소는 칸 안에서 끊김) */
+body{word-break:keep-all;overflow-wrap:break-word}
+.mono,#shareUrl{overflow-wrap:anywhere}
