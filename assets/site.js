@@ -2,7 +2,7 @@
 (function(){
   "use strict";
   var root = document.documentElement;
-  var SURVEY = "https://synitart.com/synberry/";
+  var SURVEY = "/survey/";
   /* 소식 받기 접수 주소. 별도 시트용 Apps Script를 배포한 뒤 그 웹 앱 주소(…/exec)를 넣으면 양식이 열립니다.
      비어 있으면 양식은 안내만 보여 주고 아무것도 보내지 않습니다. */
   var LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbyxtboJwzarJkvW62mAd8DwrzfmBAh0OnlQJXvPh36ckIXO6Yp084SicNYQ0AIgzqCsXQ/exec";
@@ -38,7 +38,7 @@
   function srcFor(place){ return clean((incoming || "sb") + "__" + place); }
   document.querySelectorAll("a[data-survey]").forEach(function(a){
     a.href = SURVEY + "?src=" + srcFor(a.getAttribute("data-survey"));
-    a.target = "_blank"; a.rel = "noopener";
+    a.removeAttribute("target");
   });
 
   /* 복사 버튼: data-copy="요소 id" 또는 data-copy-text */
