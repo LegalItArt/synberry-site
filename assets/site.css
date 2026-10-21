@@ -3,8 +3,8 @@
   --bg:#FFF9F7; --surface:#FFFFFF; --ink:#1D1314; --muted:#5A4A4C; --line:#E6D3D3;
   --berry:#B5122B; --berry-ink:#FFFFFF; --leaf:#1E6B3A; --leaf-ink:#FFFFFF; --focus:#0B57D0; --tint:#FBE9EA; --tint2:#E7F3EB; --hold:#5A5F66;
   --bar2:#8C7A7C;
-  --f-display:"Black Han Sans","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
-  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-display:"SynItArt Sans","Black Han Sans","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-body:"SynItArt Sans","Pretendard Variable","Pretendard","IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
   --s-1:clamp(1.15rem,1.05rem + .4vw,1.3rem); --s-2:clamp(1.55rem,1.25rem + 1.1vw,2.1rem);
   --s-3:clamp(2.1rem,1.4rem + 2.8vw,3.4rem);
@@ -39,7 +39,7 @@ p{margin:0;max-width:62ch}
 /* header */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:2px solid var(--ink);display:grid;gap:10px;padding-block:14px}
 .toprow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 16px}
-.logo{font-family:"Noto Sans KR",var(--f-body);font-weight:900;font-size:1.45rem;white-space:nowrap;text-decoration:none;color:var(--ink)}
+.logo{font-family:"SynItArt Sans","Pretendard Variable","Pretendard","Noto Sans KR",var(--f-body);font-weight:900;font-size:1.45rem;white-space:nowrap;text-decoration:none;color:var(--ink)}
 .logo .hold{color:var(--hold);font-weight:700;font-size:.78em}
 .logo .syn{color:var(--leaf)} .logo b{color:var(--berry);font-weight:900}
 .logo .tm{font-size:.5em;font-weight:700;vertical-align:super;margin-left:1px;color:var(--ink)}
