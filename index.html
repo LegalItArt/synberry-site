@@ -142,19 +142,20 @@
         <h2 id="h-ai">SynBerry에서 AI가 들어가는 세 지점</h2>
         <p class="muted">"AI로 스마트하게"라는 말 대신, 어떤 데이터로 무엇을 판단해 어떤 장치를 움직이는지 적었습니다.</p>
       </div>
+      <p class="notice">지금은 <b>설계·데이터 수집 단계</b>입니다. 유통 데이터로 먼저 시작하고, 예측·선별 모델은 첫 작기(2027년 9월~) 데이터로 학습하고 실증합니다.</p>
       <div class="flow">
-        <article><h3>체험 예약에 맞춰 수확 시기 맞추기</h3><dl>
-          <dt>쓰는 데이터</dt><dd>주말 체험 예약 수 · 화방별 개화일 · 적산온도</dd>
-          <dt>판단</dt><dd>예약일에 익을 딸기가 몇 kg인지 거꾸로 계산</dd>
-          <dt>움직이는 것</dt><dd>온도 설정값 · 예약 받는 인원 상한</dd></dl></article>
-        <article><h3>센서 고장과 급액 이상 미리 알리기</h3><dl>
+        <article><h3>① 내일 딸 양 예측하기</h3><dl>
+          <dt>쓰는 데이터</dt><dd>적산온도 · 일사량 · 화방별 개화일</dd>
+          <dt>판단</dt><dd>내일 수확할 수 있는 딸기가 몇 kg인지 계산</dd>
+          <dt>움직이는 것</dt><dd>그만큼만 당일 배송 주문을 엽니다 · 체험 예약 인원 상한</dd></dl></article>
+        <article><h3>② 사진으로 등급·무름 가려내기</h3><dl>
+          <dt>쓰는 데이터</dt><dd>선별 촬영대 카메라 이미지 · 무게</dd>
+          <dt>판단</dt><dd>크기 등급과 무름·상처를 판정</dd>
+          <dt>움직이는 것</dt><dd>상자 등급 분류 · 배송 클레임 5% 이하 관리(목표)</dd></dl></article>
+        <article><h3>③ 센서 고장과 급액 이상 미리 알리기</h3><dl>
           <dt>쓰는 데이터</dt><dd>온습도 · CO₂ · 급액·배액 EC와 pH (분 단위)</dd>
           <dt>판단</dt><dd>값의 범위, 변화 속도, 같은 종류 센서끼리 비교</dd>
           <dt>움직이는 것</dt><dd>휴대전화 알림 · 수동 운전 전환 안내</dd></dl></article>
-        <article><h3>날씨 예보로 난방비 줄이기</h3><dl>
-          <dt>쓰는 데이터</dt><dd>기상 예보 · 온실 열 손실 계산값 · 보온커튼 위치</dd>
-          <dt>판단</dt><dd>다음 날 새벽 최저기온에 맞춘 커튼 여닫는 시각</dd>
-          <dt>움직이는 것</dt><dd>다겹 보온커튼 · 근권 부분난방</dd></dl></article>
       </div>
       <div style="display:grid;gap:14px">
         <h3>처음부터 넣는 안전 규칙</h3>
@@ -178,18 +179,18 @@
         <div class="spec" aria-label="SynBerry 1단계 설계 기준표">
         <div class="cap">1단계 설계 기준표 · 운영 전 계획치</div>
         <div class="row"><span>작목·작형</span><span>딸기 · 촉성 고설 수경</span></div>
-        <div class="row"><span>재배 면적</span><span>304㎡</span></div>
-        <div class="row"><span>심는 밀도</span><span>7.6주/㎡ · 약 2,300주</span></div>
+        <div class="row"><span>재배 시설</span><span>비닐하우스 120㎡</span></div>
+        <div class="row"><span>자체 생산 목표</span><span>연 약 395kg (추정)</span></div>
         <div class="row"><span>생육 적온</span><span>18~23℃</span></div>
         <div class="row"><span>배송 목표</span><span>수확 당일 수도권</span></div>
-        <div class="row"><span>첫 시즌</span><span>2027년 (목표)</span></div>
+        <div class="row"><span>첫 작기</span><span>2027년 9월 (목표)</span></div>
       </div>
-        <p class="muted">시흥 매화동 부지에 2연동 비닐 온실 304㎡로 시작합니다. 아래 순서대로 준비 상황을 공개합니다.</p>
+        <p class="muted">시흥 매화동 부지 후보(인허가 협의 중)에 비닐하우스 120㎡로 작게 시작합니다. 판매가 증명된 만큼만 키웁니다. 아래 순서대로 준비 상황을 공개합니다. 생산 목표는 농촌진흥청 수경 수량으로 계산한 추정치입니다.</p>
       </div>
       <ol class="road">
-        <li class="now"><span class="when">2026년 10월 <span class="chip now">진행 중</span></span><h3>수요 조사 · 시흥시청 사전 상담 준비</h3><p>부지에 비닐하우스와 육묘 시설을 둘 수 있는지 관할 기관에 먼저 확인합니다. 땅을 먼저 잡고 허가를 나중에 보는 순서는 피합니다.</p></li>
+        <li class="now"><span class="when">2026년 10~11월 <span class="chip now">진행 중</span></span><h3>수요 조사 · 부지 인허가 협의</h3><p>부지에 비닐하우스와 육묘 시설을 둘 수 있는지 관할 기관에 먼저 확인합니다. 땅을 먼저 잡고 허가를 나중에 보는 순서는 피합니다.</p></li>
         <li><span class="when">2026년 11월 <span class="chip">예정</span></span><h3>시공 견적 비교 · 육묘 방식 결정</h3><p>같은 설계요청서를 여러 시공사에 보내 같은 기준으로 비교합니다. 첫해 모종은 직접 기를지, 경험 많은 육묘 농가에 맡길지 이때 정합니다.</p></li>
-        <li><span class="when">2027년 <span class="chip">목표</span></span><h3>첫 재배 시즌</h3><p>첫해 수확량은 보수적으로 잡고, 매일 영농 기록과 센서 데이터를 쌓습니다.</p></li>
+        <li><span class="when">2027년 9월 <span class="chip">목표</span></span><h3>첫 작기 정식</h3><p>첫해 수확량은 보수적으로 잡고, 매일 영농 기록과 센서 데이터를 쌓습니다.</p></li>
         <li><span class="when">2028년 <span class="chip">목표</span></span><h3>체험·교육 프로그램 문 열기</h3><p>가족 딸기 따기, 학교·기관 단체 교육을 순서대로 엽니다.</p></li>
       </ol>
       <div class="principles">
@@ -197,6 +198,34 @@
         <div><h3>허리 높이 재배대</h3><p>딸기를 허리 높이의 고설 베드에서 기릅니다. 허리를 굽히지 않아도 되고, 휠체어 이용자와 어르신, 아이도 딸기를 직접 딸 수 있습니다.</p></div>
         <div><h3>농사용 전기와 체험용 전기를 분리합니다</h3><p>체험·교육 설비는 일반용 전기로 따로 계약하고 계량기도 나눕니다.</p></div>
         <div><h3>물부터 검사합니다</h3><p>지하수와 수돗물 중 무엇을 쓸지 pH·EC·철분 검사로 정하고, 닷새 치 원수를 저장합니다.</p></div>
+      </div>
+    </section>
+
+
+    <section id="book" aria-labelledby="h-book">
+      <div class="shead">
+        <span class="eyebrow">재배 교과서 · 출간 준비 중</span>
+        <h2 id="h-book">이 농장의 재배 설계서, 『딸기재배의 정석』</h2>
+        <p class="muted">운영자가 딸기재배·AI 스마트팜 과정에서 배운 것을 한 권의 재배 교과서로 정리했습니다. 장마다 시흥 SynBerry에 어떻게 적용할지 함께 적었습니다.</p>
+      </div>
+      <div class="farmtop">
+        <div class="spec" aria-label="『딸기재배의 정석』 기본 정보">
+          <div class="cap">책 기본 정보 · 2026년 11월 기준</div>
+          <div class="row"><span>구성</span><span>5부 21장 · 부록 6</span></div>
+          <div class="row"><span>분량</span><span>가제본 2권 · 685쪽</span></div>
+          <div class="row"><span>장 구성</span><span>요약·본문·적용·점검표</span></div>
+          <div class="row"><span>저작권</span><span>어문저작물 등록 신청</span></div>
+          <div class="row"><span>판매</span><span>하지 않음 · 출간 일정 미정</span></div>
+        </div>
+        <p class="muted">농촌진흥청·도 농업기술원의 공공 자료로 수치를 확인하고, 문장은 모두 새로 썼습니다. 농약 이름과 사용량은 등록 사항이 해마다 바뀌어 이 사이트에는 싣지 않습니다.</p>
+      </div>
+      <div class="progs">
+        <article class="prog"><span class="when">제1부 · 3장</span><h3>딸기를 알다</h3><ul><li>딸기라는 작물 — 산업 현황과 기회</li><li>식물학적 특성 — 관부 중심의 생리</li><li>품종과 작형</li></ul></article>
+        <article class="prog"><span class="when">제2부 · 4장</span><h3>육묘 — 농사의 절반</h3><ul><li>번식과 모주 관리</li><li>육묘 환경과 묘 소질</li><li>화아분화 — 수량을 결정하는 창</li><li>묘 위생 — 무병묘·검역·탄저 차단</li></ul></article>
+        <article class="prog"><span class="when">제3부 · 6장</span><h3>본포 재배</h3><ul><li>정식과 활착</li><li>고설 수경 시스템 설계</li><li>양액 관리의 정석</li><li>환경 제어 — 생육 단계별 목표값</li><li>개화·수분·착과 관리</li><li>겨울 재배 운영 — 보온·난방·에너지</li></ul></article>
+        <article class="prog"><span class="when">제4부 · 5장</span><h3>지키다 — 병해충·장해·수확후</h3><ul><li>병해 — 진단과 방제의 체계</li><li>해충 — 천적과 함께 쓰는 IPM</li><li>생리장해 — 병이 아닌 병</li><li>수확과 수확후 관리 — 품온과의 싸움</li><li>유통과 판매 — 가격 결정권을 지킨다</li></ul></article>
+        <article class="prog"><span class="when">제5부 · 3장</span><h3>잇다 — 스마트팜·데이터·경영</h3><ul><li>스마트팜 구축 — 짓기 전에 결정되는 것들</li><li>데이터와 AI — 기록에서 결정까지</li><li>경영과 6차산업 — 남는 농사를 설계한다</li></ul></article>
+        <article class="prog"><span class="when">부록 · 6</span><h3>현장에서 바로 펴 보는 표</h3><ul><li>A 연간 작업 캘린더(36순)</li><li>B 환경 목표값 일람표</li><li>C 양액 처방과 운용 기준표</li><li>D 생리장해·병해충 진단표</li><li>E 용어집 · F 참고문헌과 출처</li></ul></article>
       </div>
     </section>
 
@@ -294,6 +323,7 @@
             <li><span>딸기재배 기술 과정 수료</span><span class="mono">2026 · 80시간</span></li>
             <li><span>AI 스마트팜 팩토리 과정 수료</span><span class="mono">2026.8 · 52시간</span></li>
             <li><span>AI·데이터 실무교육</span><span class="mono">누적 3,603시간</span></li>
+            <li><span>『딸기재배의 정석』 집필</span><span class="mono">5부 21장 · 2026</span></li>
           </ul>
           <p class="muted small">운영자: Syn Dae Sik (申大湜)</p>
         </div>
@@ -324,7 +354,7 @@
   <footer>
     <div class="row">
       <span>SynItArt · SynBerry · 경기 시흥 · 개장 준비 중 (사업자 등록 전 단계로 판매·결제를 하지 않습니다)</span>
-      <span>문의 <span id="mail">synitart@gmail.com</span> <button class="copy" type="button" data-copy="mail">복사</button></span>
+      <span>문의 <span id="mail">syn@synitart.com</span> <button class="copy" type="button" data-copy="mail">복사</button></span>
     </div>
     <div class="row"><span>SYNBERRY 상표 출원 중 (40-2026-0216894) · <a href="privacy.html">개인정보 처리방침</a></span><span>AI·데이터 실무교육 3,603시간</span></div>
   </footer>
