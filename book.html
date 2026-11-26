@@ -28,6 +28,13 @@
   .regbox{border:3px solid currentColor;border-radius:14px;padding:18px 22px;display:grid;gap:6px;max-width:34em}
   .regbox b{font-size:1.35em;letter-spacing:.02em}
   .notice{border-left:6px solid currentColor;padding:10px 16px;margin-top:28px}
+  .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17em),1fr));gap:18px}
+  .tocpart{border:3px solid currentColor;border-radius:10px;padding:14px 18px}
+  .tocpart h3{margin:0 0 8px;font-size:1.08em}
+  .tocpart ol,.tocpart ul{margin:0;padding-left:1.6em;display:grid;gap:6px;line-height:1.55}
+  .excerpt ul.check{list-style:none;padding:0;display:grid;gap:10px}
+  .excerpt ul.check li{border:2px solid currentColor;border-radius:8px;padding:10px 14px 10px 44px;position:relative}
+  .excerpt ul.check li::before{content:"□";position:absolute;left:14px;top:8px;font-size:1.2em}
 </style>
 </head>
 <body data-page="book" class="has-mbar">
@@ -75,9 +82,20 @@
         <div class="row"><span>도판</span><span>모두 자체 제작 · 저시력 독자 기준</span></div>
         <div class="row"><span>판매</span><span>하지 않음 · 출간 일정 미정</span></div>
       </div>
-      <p style="margin-top:14px"><a href="index.html#book">전체 목차 보기 →</a></p>
+      <p style="margin-top:14px"><a href="#toc">전체 목차 보기 ↓</a></p>
     </section>
 
+    <section id="toc" aria-labelledby="h-toc">
+      <div class="shead"><h2 id="h-toc">전체 목차</h2><p class="muted">5부 21장 · 부록 6 · 굵은 글씨는 이 페이지에서 미리 읽을 수 있는 장</p></div>
+      <div class="toc">
+        <div class="tocpart"><h3>제1부 딸기를 알다</h3><ol start="1"><li><b>딸기라는 작물 — 산업 현황과 기회</b> (미리 읽기)</li><li>식물학적 특성 — 관부 중심의 생리</li><li>품종과 작형 — 일계성·사계성, 촉성·반촉성</li></ol></div>
+        <div class="tocpart"><h3>제2부 육묘 — 농사의 절반</h3><ol start="4"><li>번식과 모주 관리</li><li>육묘 환경과 묘 소질</li><li>화아분화 — 수량을 결정하는 창</li><li>묘 위생 — 무병묘·검역·탄저 차단</li></ol></div>
+        <div class="tocpart"><h3>제3부 본포 재배</h3><ol start="8"><li>정식과 활착</li><li>고설 수경 시스템 설계</li><li>양액 관리의 정석</li><li>환경 제어 — 생육 단계별 목표값</li><li>개화·수분·착과 관리</li><li>겨울 재배 운영 — 보온·난방·에너지</li></ol></div>
+        <div class="tocpart"><h3>제4부 지키다 — 병해충·장해·수확후</h3><ol start="14"><li>병해 — 진단과 방제의 체계</li><li>해충 — 천적과 함께 쓰는 IPM</li><li>생리장해 — 병이 아닌 병</li><li>수확과 수확후 관리 — 품온과의 싸움</li><li>유통과 판매 — 가격 결정권을 지킨다</li></ol></div>
+        <div class="tocpart"><h3>제5부 잇다 — 스마트팜·데이터·경영</h3><ol start="19"><li>스마트팜 구축 — 짓기 전에 결정되는 것들</li><li>데이터와 AI — 기록에서 결정까지</li><li>경영과 6차산업 — 남는 농사를 설계한다</li></ol></div>
+        <div class="tocpart"><h3>부록</h3><ul><li>A 연간 작업 캘린더(36순)</li><li>B 환경 목표값 일람표</li><li>C 양액 처방과 운용 기준표</li><li>D 생리장해·병해충 진단표</li><li>E 용어집</li><li>F 참고문헌과 출처</li></ul></div>
+      </div>
+    </section>
     <section id="excerpt" aria-labelledby="h-ex">
       <div class="shead">
         <span class="eyebrow">미리 읽기 · 제1부 딸기를 알다</span>
@@ -89,7 +107,22 @@
         <h3>1.1 왜 딸기인가</h3>
         <p>딸기는 과채류 가운데 단위 무게당 가격이 높은 축에 속하면서도, 초장이 30cm 안팎으로 낮고 근권(뿌리가 뻗는 범위) 부피가 작아 고설 베드와 다단 재배에 적합한 거의 유일한 과채류다. 상추 같은 엽채류가 kg당 수천 원에 머무는 동안 딸기는 그 3~5배의 단가를 유지하기 때문에, 시설 투자비와 전기료가 큰 스마트팜·수직농장에서 손익을 맞출 수 있는 품목으로 꼽힌다. 실제로 국내 수경재배 면적이 2005년 677ha에서 2019년 4,491ha로 급증한 배경에는 딸기 고설재배의 확산이 있었다<span class="src">(자료: 농촌진흥청 『농업기술길잡이: 시설원예』)</span>.</p>
         <p>소비 측면에서도 딸기는 겨울철 대표 과일로 자리 잡았다. 촉성재배(보온해 겨울부터 수확하는 작형) 기술의 보급으로 11월부터 이듬해 5월까지 장기간 출하가 가능해졌다. 생과 외에 베이커리·음료·가공 수요도 꾸준히 커지면서 대과·고당도 생과(B2C)와 소과 대량 공급(B2B)이라는 두 개의 뚜렷한 시장이 형성되었다.</p>
-        <p class="muted">— 1장은 이어서 산업 통계, 품종 국산화, 소비자 요구, 해외 산지, 수직농장의 계산서, 단경기 시장까지 17개 절로 이어집니다.</p>
+        <p class="muted">— 1.2절(숫자로 보는 한국 딸기 산업)은 책에서 이어집니다.</p>
+        <h3>1.3 스마트팜이 바꾸는 것</h3>
+        <p>스마트팜은 막연한 구호가 아니라 측정 가능한 성과로 검증된 기술이다. 농림축산식품부·농촌진흥청 ICT 융복합 시범사업의 딸기 농가 사례를 보면 효과의 방향이 분명하다. 충남 보령의 농가는 스마트폰 원격 환경제어에 EC(양액 농도 지표)·지온·지습 제어를 더해 10a당 인건비를 672만 원에서 639만 원으로 줄였다. 경남 산청의 농가는 정전·환경이상 시 자동 전화 통보와 24시간 온도 감시로 야간 냉해 피해를 없애고 10a당 수량을 3,500kg에서 4,000kg으로 14% 끌어올렸다. 경남 합천의 농가는 온도·습도·탄산가스·일사·풍향·EC·pH를 통합 데이터베이스로 관리해 상품화율을 92%에서 94%로 높였다<span class="src">(자료: 『품목별 스마트팜 기술 소개집』의 ICT 시범사업 사례)</span>.</p>
+        <p>세 사례의 공통점은 "사람이 하던 감시를 기계에 맡기고, 사람은 판단에 집중한다"는 것이다. 그리고 세 번째 사례가 보여주듯, 스마트팜의 종착점은 원격 제어가 아니라 데이터다. 딸기의 최적 환경요소를 수치로 쌓아 두면, 그 데이터는 다음 작기의 재배 지침이 되고, 나아가 인공지능 기반 생육 예측의 토대가 된다. 이 책의 제5부가 다루는 주제다.</p>
+        <p class="muted">— 1.4~1.6절(딸기의 내력, 국산 품종의 시대, 소비자 요구)은 책에서 이어집니다.</p>
+        <h3>1.7 기회의 지도 — 이 책이 안내하는 길</h3>
+        <p>정리하면 한국 딸기 산업에는 세 개의 간격이 있다. 첫째, 생산성 간격 — 상위 농가와 평균 농가의 수량 차이는 여전히 크고, 그 차이의 대부분은 육묘와 화아분화(꽃눈이 만들어지는 것) 관리에서 생긴다(제2부). 둘째, 기술 간격 — 스마트팜 도입률 1.84%가 말해 주듯, 검증된 ICT 기술조차 아직 대부분의 농가에 닿지 않았다(제5부). 셋째, 유통 간격 — 주산지와 최대 소비지의 물리적 거리가 만드는 신선도 손실이다(제4부 18장). 이 책은 세 간격을 순서대로 메우는 것을 목표로, 식물의 생리에서 출발해 육묘·본포 관리·병해충·수확 후 관리를 거쳐 스마트팜 구축과 경영까지를 하나의 흐름으로 안내한다.</p>
+        <h3>현장 적용 — 시흥 SynBerry의 출발점</h3>
+        <p>필자가 경기 시흥에서 설계·운영하는 소규모 스마트팜(2연동 온실 304㎡와 40ft 컨테이너 육묘동)은 이 책의 살아 있는 실습장이다. 수도권 당일 공급이라는 유통 가설, 컨테이너 육묘의 경제성 검증, 환경 데이터의 축적과 소프트웨어화 — 각 장의 끝에서 이 농장의 실제 수치와 판단 근거를 공개하고, 교과서의 원칙이 현장에서 어떻게 조정되는지를 보여줄 것이다. 1.10의 월별 가격은 이 농장의 출발 조건을 숫자로 보여 준다 — 11월 값이 5월의 약 3배이므로, 수도권 당일 공급의 신선도 이점은 분화와 정식을 앞당겨 11~12월 물량을 확보할 때 가장 크게 의미를 갖는다. 다만 SynBerry는 아직 사업자 등록 전 수요 조사 단계여서, 판매 단가가 아니라 수요의 크기와 시기를 먼저 확인하고 있다.</p>
+        <h3>점검표 — 1장을 덮기 전에</h3>
+        <ul class="check">
+        <li>내가 겨냥하는 시장은 생과 B2C인가, 가공·업소용 B2B인가, 체험·교육인가.</li>
+        <li>내 농장 예정지는 주요 소비지에서 몇 시간 거리인가. 당일 공급이 가능한 입지인가.</li>
+        <li>지역의 딸기 스마트팜 도입 농가를 방문해 보았는가. 그들이 축적한 환경 데이터의 항목은 무엇인가.</li>
+        </ul>
+        <p class="muted">— 1장은 모두 17개 절입니다. 1.8절부터 세계 생산·교역, 주산지와 농가 구조, 계절별 가격, 수출, 품종과 로열티, 10a 손익, 해외 산지, 수직농장의 계산서, 단경기 시장, 통계 읽는 법이 책에서 이어집니다. 본문의 절 번호(1.9 등)는 책 기준입니다.</p>
       </div>
       <div class="notice">
         <p><b>이용 안내</b> · 이 페이지의 글은 저작권법으로 보호됩니다 (저작권 등록 제C-2026-063855호). 출처를 밝힌 짧은 인용은 환영하지만, 전문을 옮기거나 다른 곳에 다시 올리는 것은 허락이 필요합니다. 문의 syn@synitart.com</p>
@@ -98,8 +131,8 @@
 
     <section aria-labelledby="h-news">
       <div class="shead"><h2 id="h-news">출간 소식을 받아 보세요</h2></div>
-      <p>출간 일정과 체험·교육 과정에서 이 책을 교재로 쓰는 소식을 알려 드립니다.</p>
-      <p><a class="cta" data-survey="book" href="/survey/">소식 받기 (1분)</a></p>
+      <p>출간 일정과 체험·교육 과정에서 이 책을 교재로 쓰는 소식을 문자로 알려 드립니다. 시식 체험단 설문과는 별개의 신청이며, 「책 출간 소식」을 고르시면 됩니다.</p>
+      <p><a class="cta" href="index.html?topic=book#subscribe">출간 소식 받기 (1분)</a></p>
     </section>
   </main>
 <div class="mbar"><a class="cta" data-survey="mbar-book" href="/survey/">무료 시식 체험단 신청 (1분)</a></div>
@@ -111,6 +144,6 @@
     <div class="row"><span>SYNBERRY 상표 출원 중 (40-2026-0216894) · 『딸기재배의 정석』 저작권 등록 제C-2026-063855호 · <a href="privacy.html">개인정보 처리방침</a></span><span>AI·데이터 실무교육 3,603시간</span></div>
   </footer>
 </div>
-<script src="assets/site.js?v=12"></script>
+<script src="assets/site.js?v=13"></script>
 </body>
 </html>
