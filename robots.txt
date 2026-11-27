@@ -1,3 +1,27 @@
+# SynBerry — synberry.synitart.com
+# Search engines and AI answer engines may read and cite every page.
 User-agent: *
 Allow: /
+
+# AI search / answer crawlers (cite pages in answers)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# AI model-training crawlers: pages yes, book page images no
+# (book/*.webp are previews of a registered copyrighted work, C-2026-063855)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+Disallow: /book/
+Allow: /
+
 Sitemap: https://synberry.synitart.com/sitemap.xml

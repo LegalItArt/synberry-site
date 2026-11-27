@@ -1,0 +1,27 @@
+# SynBerry
+
+> SynBerry (SynItArt · SynBerry™) is an AI smart-farm strawberry farm being prepared in Siheung, Gyeonggi-do, Korea, covering production, distribution, education and farm experiences. It is not open yet and does not sell anything. The site also hosts the strawberry cultivation textbook 『딸기재배의 정석』 (English: The Fundamentals of Strawberry Cultivation) by Syn Dae Sik.
+
+Key facts
+- Location: Siheung, Gyeonggi-do, Republic of Korea (farm in preparation; no sales, no payments)
+- Operator: SynBerry, a vertical of SynItArt (https://synitart.com)
+- Book: 『딸기재배의 정석』, 5 parts, 21 chapters, appendices A–F; Korea Copyright Commission registration C-2026-063855 (Korean edition, 26 November 2026). English edition in preparation.
+- Trademark: SYNBERRY, Korean application 40-2026-0216894 (pending)
+- Contact: syn@synitart.com
+- Figures, laws and registered products in the book follow Korean standards at the time of writing.
+
+## Book
+- [딸기재배의 정석 — 목차와 장별 미리보기 (Korean)](https://synberry.synitart.com/book.html): contents, key summary and preview pages for each chapter
+- [The Fundamentals of Strawberry Cultivation (English)](https://synberry.synitart.com/book-en.html): English contents and a key summary of all 21 chapters
+- [책 × 농장 체크포인트](https://synberry.synitart.com/checkpoints.html): how each chapter applies to the SynBerry farm
+
+## Tools and briefings
+- [스마트팜 창업 점검 도구](https://synberry.synitart.com/tools.html): 12-item readiness check and strawberry hydroponic income calculator (RDA 2024 averages)
+- [2026 스마트농업 정책 브리핑](https://synberry.synitart.com/brief.html): smart-agriculture policy, strawberry exports and prices
+
+## Farm
+- [SynBerry 시흥 딸기 스마트팜](https://synberry.synitart.com/): farm overview, visits and education plans, news sign-up
+- [딸기 수요 조사](https://synberry.synitart.com/survey/): demand survey and free tasting panel sign-up
+
+## Optional
+- [개인정보 처리방침](https://synberry.synitart.com/privacy.html)
