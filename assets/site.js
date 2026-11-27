@@ -30,7 +30,7 @@
   var tb = $("themeBtn");
   function isDark(){ var t = root.getAttribute("data-theme"); return t ? t === "dark" : !!(window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches); }
   var saved = store("sb-theme"); if (saved === "dark" || saved === "light") root.setAttribute("data-theme", saved);
-  function label(){ if (tb) tb.textContent = isDark() ? "밝게" : "어둡게"; }
+  function label(){ if (tb) var en = root.lang === "en"; tb.textContent = isDark() ? (en ? "Light" : "밝게") : (en ? "Dark" : "어둡게"); }
   label();
   if (tb) tb.addEventListener("click", function(){ var n = isDark() ? "light" : "dark"; root.setAttribute("data-theme", n); store("sb-theme", n); label(); });
 
